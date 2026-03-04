@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cozy Cup | Sip into Serenity</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,400&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              serif: ['"Cormorant Garamond"', 'serif'],
+              sans: ['"Lato"', 'sans-serif'],
+            },
+            colors: {
+              coffee: {
+                50: '#fdf8f6',
+                100: '#f2e8e5',
+                200: '#eaddd7',
+                300: '#e0cec7',
+                400: '#d2bab0',
+                500: '#a77f70',
+                600: '#8a5a4a',
+                700: '#6d4c41',
+                800: '#4e342e',
+                900: '#3e2723',
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      /* Custom smooth scrolling and scrollbar hiding for a cleaner look */
+      html {
+        scroll-behavior: smooth;
+      }
+      .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+      }
+      .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.568.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-coffee-50 text-stone-800 antialiased selection:bg-coffee-200 selection:text-coffee-900">
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
